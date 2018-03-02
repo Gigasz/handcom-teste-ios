@@ -1,5 +1,5 @@
 //
-//  Produto.swift
+//  Promocao.swift
 //  Handcom-Sales app
 //
 //  Created by Arthur Valle on 28/02/2018.
@@ -9,8 +9,13 @@
 import Foundation
 
 struct Produto: Codable {
-    let IdProduto: Int?
-    let CodigoBarras: String?
-    let CodigoInterno: String?
-    let NomeProdutoBase: String?
+    let Titulo: String?
+    let Produto: DadosProduto?
+    let Preco: Double?
+    let PrecoAnterior: Double?
+    let DataInicio: String?
+    let DataTermino: String?
+    let Categoria: Categoria?
+    let UrlImage: String?
 }
+

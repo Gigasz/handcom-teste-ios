@@ -8,14 +8,21 @@
 
 import UIKit
 
+//enum RequestError {
+//    case url
+//    case taskError(error: NSError)
+//    case noResponse
+//    case noData
+//    case responseStatusCode(code: Int)
+//    case invalidJson
+//}
+
 class SalesTableViewController: UITableViewController {
     
     var sales: Results!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadSales()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,56 +30,18 @@ class SalesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    func loadSales() {
-        let basepath = "http://homolog.smartretail.com.br/api/encartes/web?empresa=20"
-        
-        let configuration: URLSessionConfiguration = {
-            let config = URLSessionConfiguration.default
-            config.httpAdditionalHeaders = ["Content-Type": "application/json"]
-            config.timeoutIntervalForRequest = 30.0
-            config.httpMaximumConnectionsPerHost = 5
-            return config
-        }()
-        
-        let session = URLSession(configuration: configuration)
-        
-        guard let url = URL(string: basepath) else {return}
-        
-        let dataTask = session.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
-            
-            if error == nil {
-                
-                guard let response = response as? HTTPURLResponse else {return}
-                
-                if response.statusCode == 200 {
-                    guard let data = data else {return}
-                    do {
-                        
-                        let sales = try JSONDecoder().decode(Results.self, from: data)
-                        dump(sales)
-                        self.sales = sales
-                        
-                    } catch {
-                        print("1")
-                        print(error.localizedDescription)
-                    }
-                    
-                } else {
-                    print("Invalid Request")
-                }
-                
-            } else {
-                print("2")
-                print(error!)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        REST.get(onComplete: { (sales) in
+            self.sales = sales
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
+        }) { (error) in
+            print("Error: ", error)
         }
-        dataTask.resume()
     }
     
-    func renderContent() {
-        
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -82,18 +51,54 @@ class SalesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return sales.results.count
+        if(sales != nil) {
+            var promocoesArray = self.getPromocoesArray(result: sales)
+            return promocoesArray.count
+        }
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if(sales != nil) {
+            var promocoesArray = self.getPromocoesArray(result: sales)
+            return promocoesArray[section].Nome
+        }
+        return nil
+    }
+    
+    func getPromocoesArray (result: Results) -> [Promocao] {
+        var promocoes: [Promocao] = []
+        for promocao in result.results! {
+            promocoes.append(promocao)
+        }
+        return promocoes
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if(sales != nil) {
+            var promocoesArray = self.getPromocoesArray(result: sales)
+            return promocoesArray[section].Promocoes!.count
+        }
         return 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SalesTableViewCell
+        
+//        dump(sales)
+        
+        if(sales != nil) {
+            var promocoesArray = self.getPromocoesArray(result: sales)
+            
+            let product = promocoesArray[indexPath.section].Promocoes![indexPath.row]
+            
+            cell.prepare(with: product, onImageLoad: {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
+        }
 
         return cell
     }

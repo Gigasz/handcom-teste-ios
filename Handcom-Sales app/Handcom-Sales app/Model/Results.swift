@@ -9,5 +9,5 @@
 import Foundation
 
 struct Results: Codable {
-    let results: [Promocoes]
+    let results: [Promocao]?
 }

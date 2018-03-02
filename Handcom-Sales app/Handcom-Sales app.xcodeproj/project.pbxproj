@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73B5E86DF16DCC205F848FE /* Pods_Handcom_Sales_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07783AC65B13D8B3C64EDB3 /* Pods_Handcom_Sales_app.framework */; };
 		B11E3B2D2046FB8700BC4B00 /* SalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */; };
 		B11E3B2F2046FBB700BC4B00 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B2E2046FBB700BC4B00 /* ProductViewController.swift */; };
-		B11E3B312046FE9D00BC4B00 /* Promocao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B302046FE9D00BC4B00 /* Promocao.swift */; };
+		B11E3B312046FE9D00BC4B00 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B302046FE9D00BC4B00 /* Produto.swift */; };
 		B11E3B33204704FE00BC4B00 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B32204704FE00BC4B00 /* Categoria.swift */; };
-		B11E3B352047050400BC4B00 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B342047050400BC4B00 /* Produto.swift */; };
+		B11E3B352047050400BC4B00 /* DadosProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B342047050400BC4B00 /* DadosProduto.swift */; };
 		B11E3B3920470A7A00BC4B00 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B3820470A7A00BC4B00 /* SalesTableViewCell.swift */; };
-		B159F879204724C30053EEA0 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159F878204724C30053EEA0 /* RequestController.swift */; };
 		B159F87B2047367A0053EEA0 /* Loja.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159F87A2047367A0053EEA0 /* Loja.swift */; };
 		B159F87D204742670053EEA0 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159F87C204742670053EEA0 /* Results.swift */; };
-		B159F87F204742850053EEA0 /* Promocoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159F87E204742850053EEA0 /* Promocoes.swift */; };
+		B159F87F204742850053EEA0 /* Promocao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159F87E204742850053EEA0 /* Promocao.swift */; };
+		B159F881204899CD0053EEA0 /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159F880204899CD0053EEA0 /* REST.swift */; };
 		B1B8734E2043062500C533C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8734D2043062500C533C5 /* AppDelegate.swift */; };
 		B1B873532043062500C533C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B873512043062500C533C5 /* Main.storyboard */; };
 		B1B873552043062500C533C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B873542043062500C533C5 /* Assets.xcassets */; };
@@ -24,22 +25,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6651BA72F2506331B7365B83 /* Pods-Handcom-Sales app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handcom-Sales app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Handcom-Sales app/Pods-Handcom-Sales app.debug.xcconfig"; sourceTree = "<group>"; };
 		B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewController.swift; sourceTree = "<group>"; };
 		B11E3B2E2046FBB700BC4B00 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		B11E3B302046FE9D00BC4B00 /* Promocao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promocao.swift; sourceTree = "<group>"; };
+		B11E3B302046FE9D00BC4B00 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 		B11E3B32204704FE00BC4B00 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
-		B11E3B342047050400BC4B00 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
+		B11E3B342047050400BC4B00 /* DadosProduto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosProduto.swift; sourceTree = "<group>"; };
 		B11E3B3820470A7A00BC4B00 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
-		B159F878204724C30053EEA0 /* RequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 		B159F87A2047367A0053EEA0 /* Loja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loja.swift; sourceTree = "<group>"; };
 		B159F87C204742670053EEA0 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
-		B159F87E204742850053EEA0 /* Promocoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promocoes.swift; sourceTree = "<group>"; };
+		B159F87E204742850053EEA0 /* Promocao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promocao.swift; sourceTree = "<group>"; };
+		B159F880204899CD0053EEA0 /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
 		B1B8734A2043062500C533C5 /* Handcom-Sales app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Handcom-Sales app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B8734D2043062500C533C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1B873522043062500C533C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1B873542043062500C533C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1B873572043062500C533C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1B873592043062500C533C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC972BBF01AD112333304611 /* Pods-Handcom-Sales app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handcom-Sales app.release.xcconfig"; path = "Pods/Target Support Files/Pods-Handcom-Sales app/Pods-Handcom-Sales app.release.xcconfig"; sourceTree = "<group>"; };
+		F07783AC65B13D8B3C64EDB3 /* Pods_Handcom_Sales_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Handcom_Sales_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,21 +51,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73B5E86DF16DCC205F848FE /* Pods_Handcom_Sales_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27209DC1AE9A495322EA96B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6651BA72F2506331B7365B83 /* Pods-Handcom-Sales app.debug.xcconfig */,
+				CC972BBF01AD112333304611 /* Pods-Handcom-Sales app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B11E3A0220446E6D00BC4B00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B11E3B302046FE9D00BC4B00 /* Promocao.swift */,
+				B11E3B302046FE9D00BC4B00 /* Produto.swift */,
 				B11E3B32204704FE00BC4B00 /* Categoria.swift */,
-				B11E3B342047050400BC4B00 /* Produto.swift */,
+				B11E3B342047050400BC4B00 /* DadosProduto.swift */,
 				B159F87A2047367A0053EEA0 /* Loja.swift */,
 				B159F87C204742670053EEA0 /* Results.swift */,
-				B159F87E204742850053EEA0 /* Promocoes.swift */,
+				B159F87E204742850053EEA0 /* Promocao.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,7 +95,7 @@
 				B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */,
 				B11E3B2E2046FBB700BC4B00 /* ProductViewController.swift */,
 				B11E3B3820470A7A00BC4B00 /* SalesTableViewCell.swift */,
-				B159F878204724C30053EEA0 /* RequestController.swift */,
+				B159F880204899CD0053EEA0 /* REST.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +105,8 @@
 			children = (
 				B1B8734C2043062500C533C5 /* Handcom-Sales app */,
 				B1B8734B2043062500C533C5 /* Products */,
+				27209DC1AE9A495322EA96B7 /* Pods */,
+				C8ED5C21F961E3982AD4F79B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +131,14 @@
 			path = "Handcom-Sales app";
 			sourceTree = "<group>";
 		};
+		C8ED5C21F961E3982AD4F79B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F07783AC65B13D8B3C64EDB3 /* Pods_Handcom_Sales_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1B8735C2043062500C533C5 /* Build configuration list for PBXNativeTarget "Handcom-Sales app" */;
 			buildPhases = (
+				5495F72BC10226C43FA420AA /* [CP] Check Pods Manifest.lock */,
 				B1B873462043062500C533C5 /* Sources */,
 				B1B873472043062500C533C5 /* Frameworks */,
 				B1B873482043062500C533C5 /* Resources */,
+				645790983A2FCF4BFB386CD3 /* [CP] Embed Pods Frameworks */,
+				740037A505E0AC84B0C93EEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,22 +209,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5495F72BC10226C43FA420AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Handcom-Sales app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		645790983A2FCF4BFB386CD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Handcom-Sales app/Pods-Handcom-Sales app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Handcom-Sales app/Pods-Handcom-Sales app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		740037A505E0AC84B0C93EEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Handcom-Sales app/Pods-Handcom-Sales app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1B873462043062500C533C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B11E3B2F2046FBB700BC4B00 /* ProductViewController.swift in Sources */,
-				B11E3B312046FE9D00BC4B00 /* Promocao.swift in Sources */,
+				B11E3B312046FE9D00BC4B00 /* Produto.swift in Sources */,
 				B11E3B2D2046FB8700BC4B00 /* SalesTableViewController.swift in Sources */,
 				B11E3B3920470A7A00BC4B00 /* SalesTableViewCell.swift in Sources */,
 				B159F87D204742670053EEA0 /* Results.swift in Sources */,
 				B159F87B2047367A0053EEA0 /* Loja.swift in Sources */,
 				B1B8734E2043062500C533C5 /* AppDelegate.swift in Sources */,
-				B159F87F204742850053EEA0 /* Promocoes.swift in Sources */,
+				B159F881204899CD0053EEA0 /* REST.swift in Sources */,
+				B159F87F204742850053EEA0 /* Promocao.swift in Sources */,
 				B11E3B33204704FE00BC4B00 /* Categoria.swift in Sources */,
-				B11E3B352047050400BC4B00 /* Produto.swift in Sources */,
-				B159F879204724C30053EEA0 /* RequestController.swift in Sources */,
+				B11E3B352047050400BC4B00 /* DadosProduto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +413,7 @@
 		};
 		B1B8735D2043062500C533C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6651BA72F2506331B7365B83 /* Pods-Handcom-Sales app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +429,7 @@
 		};
 		B1B8735E2043062500C533C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC972BBF01AD112333304611 /* Pods-Handcom-Sales app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
