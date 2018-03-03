@@ -28,6 +28,9 @@
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="onEditChangeFiltroNomeProduto:" destination="y5W-dh-A9o" eventType="editingChanged" id="ASi-xl-mPm"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,6 +96,9 @@
                     <navigationItem key="navigationItem" title="Promoções" id="1LS-KE-1Fq" propertyAccessControl="all">
                         <barButtonItem key="rightBarButtonItem" title="Categorias" id="61X-xg-baR"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tfFiltroNomeProduto" destination="IHm-3C-77M" id="epJ-Kf-mDR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6W-2k-Zy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

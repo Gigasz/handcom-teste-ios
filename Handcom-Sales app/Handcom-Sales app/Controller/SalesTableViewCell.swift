@@ -30,7 +30,7 @@ class SalesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func prepare(with sale: Produto, onImageLoad: @escaping () -> Void) {
+    func prepare(with sale: Produto) { //, onImageLoad: @escaping () -> Void
 //        dump(sale)
         
         lbName.text = sale.Titulo!

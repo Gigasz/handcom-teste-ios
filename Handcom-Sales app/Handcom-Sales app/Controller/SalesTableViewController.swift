@@ -19,8 +19,10 @@ import UIKit
 
 class SalesTableViewController: UITableViewController {
     
+    @IBOutlet weak var tfFiltroNomeProduto: UITextField!
+    
     var sales: Results!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -93,16 +95,23 @@ class SalesTableViewController: UITableViewController {
             
             let product = promocoesArray[indexPath.section].Promocoes![indexPath.row]
             
-            cell.prepare(with: product, onImageLoad: {
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            })
+            dump(product.Titulo!.range(of: tfFiltroNomeProduto.text!))
+            
+            if product.Titulo!.range(of: tfFiltroNomeProduto.text!) != nil || tfFiltroNomeProduto.text == nil || tfFiltroNomeProduto.text == "" {
+                cell.prepare(with: product)
+            }
         }
 
         return cell
     }
-
+    
+    @IBAction func onEditChangeFiltroNomeProduto(_ sender: UITextField) {
+        dump(tfFiltroNomeProduto.text)
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
