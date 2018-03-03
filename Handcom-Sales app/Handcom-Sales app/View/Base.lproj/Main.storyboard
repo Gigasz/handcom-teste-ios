@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ZV-kT-BKJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sux-mn-WVO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,51 +11,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="4Cj-fS-gTB">
+        <!--Promoções-->
+        <scene sceneID="3Ad-PN-4uy">
             <objects>
-                <viewController id="LjD-XS-yLl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Njx-ow-aIh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="lyi-sk-4q7"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="6br-XV-V61"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y2O-k7-vhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="19" y="547"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="wgb-65-EqE">
-            <objects>
-                <tableViewController id="6ZV-kT-BKJ" customClass="SalesTableViewController" customModule="Handcom_Sales_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z6A-mG-9cu">
+                <tableViewController id="y5W-dh-A9o" customClass="SalesTableViewController" customModule="Handcom_Sales_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nVa-2N-ffy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="rHx-Ya-Ypd">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-3C-77M">
-                                    <rect key="frame" x="8" y="62" width="359" height="30"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🔍 Nome do Produto" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-3C-77M">
+                                    <rect key="frame" x="8" y="8" width="359" height="25"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="IHm-3C-77M" firstAttribute="leading" secondItem="rHx-Ya-Ypd" secondAttribute="leading" constant="8" id="20k-Gw-55g"/>
                                 <constraint firstAttribute="trailing" secondItem="IHm-3C-77M" secondAttribute="trailing" constant="8" id="EmY-IC-8Ri"/>
+                                <constraint firstItem="IHm-3C-77M" firstAttribute="top" secondItem="rHx-Ya-Ypd" secondAttribute="top" constant="8" id="Hj2-7l-07j"/>
                                 <constraint firstAttribute="bottom" secondItem="IHm-3C-77M" secondAttribute="bottom" constant="8" id="ddc-2R-L7e"/>
                             </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="LBH-7k-XYR" customClass="SalesTableViewCell" customModule="Handcom_Sales_app" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="69" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LBH-7k-XYR" id="rbv-H9-DDK">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
@@ -96,39 +81,53 @@
                                     <outlet property="ivProduct" destination="eZY-j8-9iB" id="aas-bN-zZR"/>
                                     <outlet property="lbName" destination="RAq-uW-URc" id="BxN-GC-S1F"/>
                                     <outlet property="lbPrice" destination="Z1d-u0-eCl" id="tMN-re-xmK"/>
+                                    <segue destination="Dat-s4-iX1" kind="show" id="kva-rU-bCL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="6ZV-kT-BKJ" id="guW-MV-Abg"/>
-                            <outlet property="delegate" destination="6ZV-kT-BKJ" id="iDY-OW-nuR"/>
+                            <outlet property="dataSource" destination="y5W-dh-A9o" id="y0F-Jx-Wvu"/>
+                            <outlet property="delegate" destination="y5W-dh-A9o" id="xrY-cQ-DSZ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="CFk-AY-06w">
-                        <color key="badgeColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Promoções" id="1LS-KE-1Fq" propertyAccessControl="all">
+                        <barButtonItem key="rightBarButtonItem" title="Categorias" id="61X-xg-baR"/>
+                    </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fcd-Ur-qLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6W-2k-Zy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16.800000000000001" y="-123.68815592203899"/>
+            <point key="canvasLocation" x="-372" y="816.34182908545733"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Dmt-0F-RFH">
+        <!--View Controller-->
+        <scene sceneID="gUW-WZ-xHa">
             <objects>
-                <tabBarController id="6os-Lo-VhF" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uXd-Zh-Cay">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="LjD-XS-yLl" kind="relationship" relationship="viewControllers" id="rc3-MI-Zzr"/>
-                        <segue destination="6ZV-kT-BKJ" kind="relationship" relationship="viewControllers" id="tqT-il-9Ys"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IwP-CJ-8NY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Dat-s4-iX1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hw4-Sm-Vx6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="40r-15-i8u"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3P-HO-ur4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-932" y="216"/>
+            <point key="canvasLocation" x="490" y="816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zYb-Bd-7KN">
+            <objects>
+                <navigationController id="Sux-mn-WVO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Ogl-dN-oQU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="y5W-dh-A9o" kind="relationship" relationship="rootViewController" id="c6x-Fc-NU4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7C-VU-CME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="63"/>
         </scene>
     </scenes>
 </document>

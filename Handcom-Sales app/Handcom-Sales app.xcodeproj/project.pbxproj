@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A73B5E86DF16DCC205F848FE /* Pods_Handcom_Sales_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07783AC65B13D8B3C64EDB3 /* Pods_Handcom_Sales_app.framework */; };
 		B11E3B2D2046FB8700BC4B00 /* SalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */; };
-		B11E3B2F2046FBB700BC4B00 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B2E2046FBB700BC4B00 /* ProductViewController.swift */; };
 		B11E3B312046FE9D00BC4B00 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B302046FE9D00BC4B00 /* Produto.swift */; };
 		B11E3B33204704FE00BC4B00 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B32204704FE00BC4B00 /* Categoria.swift */; };
 		B11E3B352047050400BC4B00 /* DadosProduto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B342047050400BC4B00 /* DadosProduto.swift */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		6651BA72F2506331B7365B83 /* Pods-Handcom-Sales app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handcom-Sales app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Handcom-Sales app/Pods-Handcom-Sales app.debug.xcconfig"; sourceTree = "<group>"; };
 		B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewController.swift; sourceTree = "<group>"; };
-		B11E3B2E2046FBB700BC4B00 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		B11E3B302046FE9D00BC4B00 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 		B11E3B32204704FE00BC4B00 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		B11E3B342047050400BC4B00 /* DadosProduto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosProduto.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */,
-				B11E3B2E2046FBB700BC4B00 /* ProductViewController.swift */,
 				B11E3B3820470A7A00BC4B00 /* SalesTableViewCell.swift */,
 				B159F880204899CD0053EEA0 /* REST.swift */,
 			);
@@ -268,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B11E3B2F2046FBB700BC4B00 /* ProductViewController.swift in Sources */,
 				B11E3B312046FE9D00BC4B00 /* Produto.swift in Sources */,
 				B11E3B2D2046FB8700BC4B00 /* SalesTableViewController.swift in Sources */,
 				B11E3B3920470A7A00BC4B00 /* SalesTableViewCell.swift in Sources */,

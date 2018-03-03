@@ -52,7 +52,7 @@ class SalesTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         if(sales != nil) {
-            var promocoesArray = self.getPromocoesArray(result: sales)
+            let promocoesArray = self.getPromocoesArray(result: sales)
             return promocoesArray.count
         }
         return 0

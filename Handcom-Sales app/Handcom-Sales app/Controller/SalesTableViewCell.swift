@@ -32,24 +32,28 @@ class SalesTableViewCell: UITableViewCell {
     
     func prepare(with sale: Produto, onImageLoad: @escaping () -> Void) {
 //        dump(sale)
+        
         lbName.text = sale.Titulo!
+        
         lbPrice.text = "R$\(sale.Preco!)"
-        do {
-            let imageUrl = URL(string: sale.UrlImage!)
-            let data = try? Data(contentsOf: imageUrl!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-            if data != nil {
-                ivProduct.image = UIImage(data: data!)
-            } else {
-                ivProduct.image = UIImage(named: "placeholder")
-            }
-        } catch {
-            ivProduct.image = UIImage(named: "placeholder")
-        }
+        
+//        do {
+//            let imageUrl = URL(string: sale.UrlImage!)
+//            let data = try? Data(contentsOf: imageUrl!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+//            if data != nil {
+//                ivProduct.image = UIImage(data: data!)
+//                onImageLoad()
+//            } else {
+//                ivProduct.image = UIImage(named: "placeholder")
+//            }
+//        } catch {
+//            ivProduct.image = UIImage(named: "placeholder")
+//        }
 
-//        let imageUrl = URL(string: sale.UrlImage!)
-//        ivProduct.kf.indicatorType = .activity
-////        let resource = ImageResource(downloadURL: imageUrl!, cacheKey: "HandcomProductImage\(sale.Produto?.IdProduto)")
-//        ivProduct.kf.setImage(with: imageUrl, placeholder: #imageLiteral(resourceName: "placeholder"), )
+        let imageUrl = URL(string: "http://\(sale.UrlImage!)")
+        ivProduct.kf.indicatorType = .activity
+        let resource = ImageResource(downloadURL: imageUrl!, cacheKey: "HandcomProductImage\(String(describing: sale.Produto?.IdProduto))")
+        ivProduct.kf.setImage(with: resource, placeholder: #imageLiteral(resourceName: "placeholder") , options: nil, progressBlock: nil)
     }
 
 }
