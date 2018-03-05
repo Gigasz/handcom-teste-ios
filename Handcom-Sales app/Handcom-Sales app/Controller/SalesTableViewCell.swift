@@ -36,19 +36,6 @@ class SalesTableViewCell: UITableViewCell {
         lbName.text = sale.Titulo!
         
         lbPrice.text = "R$\(sale.Preco!)"
-        
-//        do {
-//            let imageUrl = URL(string: sale.UrlImage!)
-//            let data = try? Data(contentsOf: imageUrl!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-//            if data != nil {
-//                ivProduct.image = UIImage(data: data!)
-//                onImageLoad()
-//            } else {
-//                ivProduct.image = UIImage(named: "placeholder")
-//            }
-//        } catch {
-//            ivProduct.image = UIImage(named: "placeholder")
-//        }
 
         let imageUrl = URL(string: "http://\(sale.UrlImage!)")
         ivProduct.kf.indicatorType = .activity

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A73B5E86DF16DCC205F848FE /* Pods_Handcom_Sales_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07783AC65B13D8B3C64EDB3 /* Pods_Handcom_Sales_app.framework */; };
+		B1120E40204AC29700D34A56 /* SelectedProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1120E3F204AC29700D34A56 /* SelectedProductViewController.swift */; };
 		B11E3B2D2046FB8700BC4B00 /* SalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */; };
 		B11E3B312046FE9D00BC4B00 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B302046FE9D00BC4B00 /* Produto.swift */; };
 		B11E3B33204704FE00BC4B00 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E3B32204704FE00BC4B00 /* Categoria.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		6651BA72F2506331B7365B83 /* Pods-Handcom-Sales app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handcom-Sales app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Handcom-Sales app/Pods-Handcom-Sales app.debug.xcconfig"; sourceTree = "<group>"; };
+		B1120E3F204AC29700D34A56 /* SelectedProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProductViewController.swift; sourceTree = "<group>"; };
 		B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewController.swift; sourceTree = "<group>"; };
 		B11E3B302046FE9D00BC4B00 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 		B11E3B32204704FE00BC4B00 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				B11E3B2C2046FB8700BC4B00 /* SalesTableViewController.swift */,
 				B11E3B3820470A7A00BC4B00 /* SalesTableViewCell.swift */,
 				B159F880204899CD0053EEA0 /* REST.swift */,
+				B1120E3F204AC29700D34A56 /* SelectedProductViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				B11E3B2D2046FB8700BC4B00 /* SalesTableViewController.swift in Sources */,
 				B11E3B3920470A7A00BC4B00 /* SalesTableViewCell.swift in Sources */,
 				B159F87D204742670053EEA0 /* Results.swift in Sources */,
+				B1120E40204AC29700D34A56 /* SelectedProductViewController.swift in Sources */,
 				B159F87B2047367A0053EEA0 /* Loja.swift in Sources */,
 				B1B8734E2043062500C533C5 /* AppDelegate.swift in Sources */,
 				B159F881204899CD0053EEA0 /* REST.swift in Sources */,
